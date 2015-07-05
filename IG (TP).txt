@@ -1,0 +1,77 @@
+
+-------------------
+TP INTERFAZ GRAFICA
+-------------------
+
+
+BASE DE DATOS inmobiliaria
+--------------------------
+
+
+TABLA barrios
+-------------
+	barrio		int(4)		identificador barrio
+	nombre		varchar(40)	nombre del barrio
+
+
+
+TABLA propietarios
+------------------
+	propietario	int(4)		identificador propietario
+	nombre		varchar(40)	nombre del propietario
+	telefono	varchar(20)	teléfono del propietario
+
+
+TABLA inmuebles
+---------------
+	inmueble	int(4)		identificador inmueble
+	domicilio	varchar(40)	domicilio del inmueble
+	tipo		varchar(1)	tipo de inmueble (C=CASA D=DEPTO L=LOCAL)
+	situacion	varchar(1)	situación del inmueble (V=VENTA A=ALQUILER)
+	propietario	int(4)		identificador propietario del inmueble
+	barrio		int(4)		identificador barrio del inmueble
+	importe		decimal(9,2)	precio de venta o alquiler del inmueble
+
+
+PROBLEMA
+--------
+
+1. SELECCIONAR DE UN COMBOBOX EL NOMBRE DE UN BARRIO, TAMBIEN APARECE LA PALABRA TODOS,
+   LA OPCION TODOS ESTA COMO PREDETERMINADA.
+2. ELEGIR EL TIPO DE INMUEBLE DE TRES BOTONES DE OPCION,
+   LA OPCION CASA ESTA COMO PREDETERMINADA.
+3. UNA CASILLA DE VERIFICACION PERMITE ELEGIR LA SITUACION DEL INMUEBLE,
+   MARCADA SIGNIFICA VENTA, DESMARCADA SIGNIFICA ALQUILER, 
+   LA CASILLA ESTA MARCADA POR DEFECTO.
+4. PULSAR UN BOTON DE COMANDO Y MOSTRAR EN UNA GRILLA TODOS LOS INMUEBLES QUE
+   COINCIDAN CON LOS PARAMETROS ELEGIDOS EN LA INTERFAZ.
+5. A CONTINUACION SE DETALLAN LAS COLUMNAS DE LA GRILLA:
+
+	- DOMICILIO DEL INMUEBLE
+	- IMPORTE DE VENTA O ALQUILER SEGUN SEA EL CASO.
+	- NOMBRE DEL PROPIETARIO
+	- TELEFONO DEL PROPIETARIO
+	- NOMBRE DEL BARRIO (ESTA COLUMNA APARECE SI ELIGIO TODOS LOS BARRIOS, DE LO CONTRARIO NO)
+
+ 
+
+PUNTAJE
+-------
+
+(20%) DISEÑO DE LA INTERFAZ
+(15%) OBTENER BARRIOS
+(15%) FILTRO POR BARRIO
+(15%) FILTRO POR TIPO DE INMUEBLE
+(15%) FILTRO POR SITUACION DEL INMUEBLE
+(20%) ESTRUCTURA DEL PROYECTO E INSTRUCCIONES SQL.
+
+
+OBSERVACION
+-----------
+NO IMPORTA LA HERRAMIENTA UTILIZADA,
+PERO LA APLICACION SE TIENE QUE PODER EJECUTAR DESDE EL SIMBOLO DEL SISTEMA (.class) O (.jar).
+
+
+
+
+
